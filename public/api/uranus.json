@@ -5,5 +5,12 @@
     {"name": "Umbriel Uranus"},
     {"name": "Titania Uranus"},
     {"name": "Oberon Uranus"}
-  ]
+  ],
+  "data": {
+    "id": "uranus",
+    "name": "Uranus",
+    "description": "Commodo amet excepteur culpa voluptate eu ipsum magna ut.",
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/220px-Uranus2.jpg",
+    "link": "https://en.wikipedia.org/wiki/Uranus"
+  }
 }

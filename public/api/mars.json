@@ -5,5 +5,12 @@
     {"name": "Umbriel"},
     {"name": "Titania"},
     {"name": "Oberon"}
-  ]
+  ],
+  "data": {
+    "id": "mars",
+    "name": "Mars",
+    "description": "Fugiat ex voluptate esse amet non nulla ullamco veniam reprehenderit.",
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/220px-OSIRIS_Mars_true_color.jpg",
+    "link": "https://en.wikipedia.org/wiki/Mars"
+  }
 }
