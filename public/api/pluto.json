@@ -1,0 +1,9 @@
+{
+  "satellites": [
+    {"name": "Phobos Pluto"},
+    {"name": "Deimos Pluto"},
+    {"name": "Umbriel Pluto"},
+    {"name": "Titania Pluto"},
+    {"name": "Oberon Pluto"}
+  ]
+}

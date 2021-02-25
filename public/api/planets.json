@@ -1,0 +1,25 @@
+{
+  "planets": [
+    {
+      "id": "mars",
+      "name": "Mars",
+      "description": "Fugiat ex voluptate esse amet non nulla ullamco veniam reprehenderit.",
+      "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/220px-OSIRIS_Mars_true_color.jpg",
+      "link": "https://en.wikipedia.org/wiki/Mars"
+    },
+    {
+      "id": "pluto",
+      "name": "Pluto",
+      "description": "Ea laborum esse amet qui sit.",
+      "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/220px-Pluto_in_True_Color_-_High-Res.jpg",
+      "link": "https://en.wikipedia.org/wiki/Pluto"
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "description": "Commodo amet excepteur culpa voluptate eu ipsum magna ut.",
+      "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/220px-Uranus2.jpg",
+      "link": "https://en.wikipedia.org/wiki/Uranus"
+    }
+  ]
+}

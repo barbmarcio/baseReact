@@ -1,27 +1,51 @@
-import React, {Fragment} from 'react'
-import Planet from './planet'
+/*eslint-disable no-undef*/
 
-const Planets = () => {
+import React, {useState, useEffect } from 'react'
+import Planet from './planet'
+import Form from './form'
+
+async function getPlanets() {
+  let response = await fetch('http://localhost:3000/api/planets.json')
+  let responseJson = await response.json()
+  return responseJson
+}
+
+const Planets = () => { 
+  const [planets, setPlanets] = useState([])
+
+  useEffect(() => {
+    getPlanets().then(data => {
+      setPlanets(data['planets'])
+    })
+  }, [])
+
+  const addPlanet = (newPlanet) => {
+    setPlanets([...planets, newPlanet])
+  }
+
   return(
-    <Fragment>
+    <>
       <h3>Planet List</h3>
       <hr/>
-      <Planet 
-        name="Mercurio" 
-        descText="Exercitation sit laborum adipisicing cillum consequat."
-        descLink="https://en.wikipedia.org/wiki/Mercury_(planet)"
-        image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/220px-Mercury_in_color_-_Prockter07-edit1.jpg"
-      />
-
-      <Planet
-        name="Pluto"
-        descText="Nisi incididunt cillum consequat dolore excepteur occaecat tempor minim exercitation consectetur."
-        descLink="https://pt.wikipedia.org/wiki/Plut%C3%A3o"
-        image="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/280px-Pluto_in_True_Color_-_High-Res.jpg"
-      />
-      
-    </Fragment>
+      <Form addPlanet={addPlanet}/>
+      <hr/>
+      {          
+        planets.map(
+          (planet, index) => 
+            <Planet 
+            id={planet.id}
+            name={planet.name}
+            description={planet.description}
+            link={planet.link}
+            img_url={planet.img_url}              
+            key={index}
+            />  
+        )
+      }
+    </>     
   )
 }
 
 export default Planets 
+
+/*eslint-enable no-undef*/
